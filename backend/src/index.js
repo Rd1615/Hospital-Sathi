@@ -27,11 +27,7 @@ dbPromise
    userModel.createTableUsers();
 
     app.listen(PORT, () => {
-<<<<<<< HEAD
-      console.log("Server 111111111111111111111111111111111 at portno ", PORT);
-=======
-      console.log("Server run at portno ", PORT);
->>>>>>> f475c1627fe10739bbc03ef1349d4be9bd29e7d6
+      console.log("Server  at portno ", PORT);
     });
   })
   .catch((err) => {
