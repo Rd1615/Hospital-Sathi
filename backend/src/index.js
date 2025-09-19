@@ -4,6 +4,8 @@ const dotenv = require('dotenv');
 const cookieParser = require("cookie-parser");
 const app = express();
 const dbPromise = require('./lib/db.js');
+const userModel = require('./model/user.model.js');
+const { use } = require("react");
 
 // import model
 
@@ -22,7 +24,7 @@ app.use(cookieParser());
 
 dbPromise
 .then(async (db) => {
-   
+   userModel.createTableUsers();
 
     app.listen(PORT, () => {
       console.log("Server running at portno ", PORT);
