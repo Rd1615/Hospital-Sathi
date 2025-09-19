@@ -5,7 +5,6 @@ const cookieParser = require("cookie-parser");
 const app = express();
 const dbPromise = require('./lib/db.js');
 const userModel = require('./model/user.model.js');
-const { use } = require("react");
 
 // import model
 
